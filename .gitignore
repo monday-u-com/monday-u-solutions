@@ -1,0 +1,4 @@
+node_modules
+.idea
+src/ex3/data/todos.txt
+package-lock.json

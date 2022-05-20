@@ -1,0 +1,132 @@
+html {
+    /* Override default "html" tag properties in order to display the app 100% of the screen */
+    height: 100%;
+}
+body {
+    /* Override default "body" to strech-fit to the screen */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.app-container{
+    /*Our overlay, colored background*/
+    width: 100%;
+    height: 100%;
+    font-family: Georgia, serif;
+    font-weight: lighter;
+    /*We used here a gradient which is a more sophisticated coloring than just a color (e.g 'black', 'yellow')*/
+    background-image: linear-gradient(
+            to top right,
+            white,
+            #d4dff3,
+            rgba(138, 144, 224, 0.76),
+            rgba(106, 117, 231, 0.76),
+            rgba(85, 97, 229, 0.76)
+    );
+
+    /*We want the list to render in the middle, both horizontally and vertically*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-name {
+    padding-left: 32px;
+    font-weight: lighter;
+}
+
+.list-container{
+    /*This is the style of the actual list*/
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+    background-color: white;
+    border: 1px silver solid;
+    border-radius: 8px;
+    -webkit-box-shadow: 12px 12px 38px -13px #000000;
+    box-shadow: 12px 12px 38px -13px #000000;
+}
+
+.list-controls {
+    /*Our textbox and button are in this element*/
+    padding: 0px 32px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.list-controls #list-item-input {
+    /*Setting the style of the input*/
+    width: 85%;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+.list-controls #list-item-submit {
+    /*Setting the style of the submit button*/
+    color: white;
+    background-color: #6C6CFF;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 4px;
+    height: 35px;
+    width: 35px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.list-controls #list-item-submit:hover{
+    background-color: #3c3cff;
+    transition: background-color .2s ease-in-out;
+}
+
+#list {
+    /*We want our list to be able to contain many items, so we set overflow to scroll*/
+    list-style-type: none;
+    padding: 0px 30px;
+    height: 310px;
+    overflow-y: scroll;
+}
+
+.list-item {
+    /*The style of each list item*/
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.list-item:hover {
+    color: blueviolet;
+    transition: color .2s ease-in-out;
+}
+
+.list-item:not(:last-of-type) {
+    /*We want to show the border for every item except the last one*/
+    border-bottom: 1px #bbb5b5 solid;
+}
+
+.list-item-delete-button {
+    /*We want the "delete" button to stick to the right area of each list item */
+    margin-left: auto;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.list-item-delete-button:hover {
+    /*When a list item is hovered on, we want to change its color */
+    /*Note the 'transition' that gives us the smooth experience */
+    background-color: #f0f0f5;
+    transition: background-color .2s ease-in-out;
+}
