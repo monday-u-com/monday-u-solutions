@@ -10,3 +10,5 @@ This is going to be so much fun! Here are a few general details:
 **Solution to exercise 1** - [HTML, CSS, JS.](https://github.com/monday-u-com/monday-u-solutions/tree/master/src/ex1)
 
 **Solution to exercise 2** - [In depth JS, Async JS, MVC](https://github.com/monday-u-com/monday-u-solutions/tree/master/src/ex2)
+
+**Solution to exercise 3** - [Advance Node.js, CLI](https://github.com/monday-u-com/monday-u-solutions/tree/master/src/ex3)

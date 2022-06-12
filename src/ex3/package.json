@@ -1,0 +1,16 @@
+{
+  "name": "ex3",
+  "version": "1.0.0",
+  "description": "ex3-cli",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.2.0",
+    "node-fetch": "^3.2.3"
+  }
+}
