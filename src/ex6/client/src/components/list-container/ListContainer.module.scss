@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--spacing-small);
+
+  .list {
+    height: 310px;
+    width: 100%;
+  }
+}
