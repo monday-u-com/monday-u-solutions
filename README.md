@@ -18,3 +18,5 @@ This is going to be so much fun! Here are a few general details:
 **Solution to exercise 5** - [Sequelize ORM](https://github.com/monday-u-com/monday-u-solutions/tree/master/src/ex5)
 
 **Solution to exercise 6** - [React](https://github.com/monday-u-com/monday-u-solutions/tree/master/src/ex6)
+
+**Solution to exercise 7** - [Redux](https://github.com/monday-u-com/monday-u-solutions/tree/master/src/ex7)
